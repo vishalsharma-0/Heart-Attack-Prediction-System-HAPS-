@@ -1,0 +1,57 @@
+name pdfmanagement
+category Package
+revision 80357
+shortdesc LaTeX PDF management bundle
+longdesc This package is used to load LaTeX's PDF management code. The
+longdesc PDF management code offers backend independent interfaces to
+longdesc central PDF dictionaries, tools to create annotations,
+longdesc outlines, form Xobjects, form fields, to embed files, and to
+longdesc handle PDF standards. The code is currently provided as
+longdesc independent package. It is automatically loaded if a document
+longdesc uses \DocumentMetadata. It can also be loaded as a package. At
+longdesc a later stage it will be integrated into the LaTeX kernel (or
+longdesc in parts into permanent support packages).
+depend tagpdf
+containersize 63756
+containerchecksum 83d967e08f954d6a3a7772450c194e5364b0d688bc2b04efcf15bdedab77d144fda6de91bf6706dd95f0d6f44f26b7ee78fcb3aff6696f7dd2ad190e213a0867
+doccontainersize 5440664
+doccontainerchecksum 35d4087bceb65fe9b66f33e7c823d23f4d609f50b41b9b732ccfa78eeb674af775e549249c847847ca6c0cabc0306f700c14bb3182b5751bee7fc0280552b909
+srccontainersize 157264
+srccontainerchecksum ce95450c138d70ee33fd978a7de1781d94644ff29b7fedbd4ff377e3dc82308250e7e23fae260077ec003a78306be036d91bdd88974380b053299b3b26c68fff
+runfiles size=180
+ texmf-dist/tex/latex/pdfmanagement/bookmark-latex-lab-testphase.ltx
+ texmf-dist/tex/latex/pdfmanagement/color-ltx.sty
+ texmf-dist/tex/latex/pdfmanagement/colorspace-patches-tmp-ltx.sty
+ texmf-dist/tex/latex/pdfmanagement/hgeneric-testphase.def
+ texmf-dist/tex/latex/pdfmanagement/hgeneric.def
+ texmf-dist/tex/latex/pdfmanagement/hyperref-colorschemes.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-dvipdfmx.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-dvips.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-dvisvgm.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-luatex.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-pdftex.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf-xetex.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-pdf.lua
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-dvipdfmx.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-dvips.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-dvisvgm.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-luatex.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-pdftex.def
+ texmf-dist/tex/latex/pdfmanagement/l3backend-testphase-xetex.def
+ texmf-dist/tex/latex/pdfmanagement/l3pdffield-testphase.sty
+ texmf-dist/tex/latex/pdfmanagement/l3pdffield.sty
+ texmf-dist/tex/latex/pdfmanagement/latex-lab-testphase-bookmark.sty
+ texmf-dist/tex/latex/pdfmanagement/lualinksplit.lua
+ texmf-dist/tex/latex/pdfmanagement/pdfmanagement-firstaid.sty
+ texmf-dist/tex/latex/pdfmanagement/pdfmanagement-init.sty
+ texmf-dist/tex/latex/pdfmanagement/pdfmanagement-testphase.sty
+ texmf-dist/tex/latex/pdfmanagement/pdfmanagement.ltx
+ texmf-dist/tex/latex/pdfmanagement/pdfmanagement.sty
+ texmf-dist/tex/latex/pdfmanagement/xcolor-patches-tmp-ltx.sty
+catalogue-alias pdfmanagement-testphase
+catalogue-contact-bugs https://github.com/latex3/pdfresources/issues
+catalogue-contact-repository https://github.com/latex3/pdfresources
+catalogue-ctan /macros/latex/contrib/pdfmanagement
+catalogue-license lppl1.3c
+catalogue-topics latex-devel pdf-feat
+catalogue-version 0.97c

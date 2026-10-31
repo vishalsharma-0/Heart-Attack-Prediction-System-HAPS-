@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968/98aa928d49f845669f04c14234600a29/artifacts
+end_time: 1791844224503
+entry_point_name: ''
+experiment_id: '443015090021681968'
+lifecycle_stage: active
+run_id: 98aa928d49f845669f04c14234600a29
+run_name: CatBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791844223326
+status: 3
+tags: []
+user_id: visha

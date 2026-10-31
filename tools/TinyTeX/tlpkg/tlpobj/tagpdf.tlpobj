@@ -1,0 +1,43 @@
+name tagpdf
+category Package
+revision 80360
+shortdesc Code for PDF tagging using pdfLaTeX and LuaLaTeX
+longdesc The package contains the core code for tagging and
+longdesc accessibility used by the LaTeX kernel in the Tagged PDF
+longdesc project. See https://github.com/latex3/tagging-project for more
+longdesc information.
+containersize 44104
+containerchecksum c54a96311aedf20bde5ab1eaa8cdc5581b18ef221b8c5308d373369a4399c28d5d56e11c15a33d6612e9c31ea184d370a541591447b77e7cdd41ba004e2b321b
+doccontainersize 3329344
+doccontainerchecksum 127129865d05bccbcd95ec2f9f9e0f375c6da29207af252571cfe5f8edac43e0ecc4275ce184369f08348994151f15c80bae2e0cca0a77c9e3e0e48521d190c1
+srccontainersize 81388
+srccontainerchecksum 5df1ca96918f49f8ebc91a77b60fddce4b2dddd59861d5b67d4f4695000bb23fed7121dc0db8f0a4f4cf67c86c0d1ceb1e41a9473ddb677c022709a0051dc38e
+runfiles size=85
+ texmf-dist/tex/latex/tagpdf/latex-align-css.html
+ texmf-dist/tex/latex/tagpdf/latex-list-css.html
+ texmf-dist/tex/latex/tagpdf/tagpdf-base.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-debug-generic.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-debug-lua.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-debug.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-luatex.def
+ texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-generic.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-lua.sty
+ texmf-dist/tex/latex/tagpdf/tagpdf-ns-latex-book.def
+ texmf-dist/tex/latex/tagpdf/tagpdf-ns-mathml.def
+ texmf-dist/tex/latex/tagpdf/tagpdf-ns-pdf.def
+ texmf-dist/tex/latex/tagpdf/tagpdf-ns-pdf2.def
+ texmf-dist/tex/latex/tagpdf/tagpdf-parent-child-2.csv
+ texmf-dist/tex/latex/tagpdf/tagpdf-parent-child.csv
+ texmf-dist/tex/latex/tagpdf/tagpdf.lua
+ texmf-dist/tex/latex/tagpdf/tagpdf.sty
+ texmf-dist/tex/latex/tagpdf/tagpdfdocu-listings-support.ltx
+ texmf-dist/tex/latex/tagpdf/tagpdfdocu-patches.sty
+ texmf-dist/tex/latex/tagpdf/verbatim-af-latex-lab-testphase.ltx
+ texmf-dist/tex/latex/tagpdf/verbatim-alt-latex-lab-testphase.ltx
+ texmf-dist/tex/latex/tagpdf/verbatim-mo-latex-lab-testphase.ltx
+catalogue-contact-repository https://github.com/latex3/tagpdf
+catalogue-contact-support https://github.com/latex3/tagpdf/issues
+catalogue-ctan /macros/latex/contrib/tagpdf
+catalogue-license lppl1.3c
+catalogue-topics accessible
+catalogue-version 1.0g

@@ -1,0 +1,46 @@
+stages:
+  load_db:
+    cmd: ml\.venv\Scripts\python.exe ml\src\data\load_db.py
+    deps:
+      - data\raw\heart_attack_india_3000.csv
+      - ml\src\data\load_db.py
+      - ml\params.yaml
+    outs:
+      - ml\artifacts\dataset_summary.json
+
+  analyze_features:
+    cmd: ml\.venv\Scripts\python.exe ml\src\features\analyze.py
+    deps:
+      - ml\src\features\analyze.py
+      - ml\artifacts\dataset_summary.json
+      - ml\params.yaml
+    params:
+      - base.random_state
+      - base.test_size
+      - base.cv_folds
+      - features.min_roc_auc_delta
+    outs:
+      - ml\artifacts\selected_features.json
+
+  train:
+    cmd: ml\.venv\Scripts\python.exe ml\src\models\train.py
+    deps:
+      - ml\src\models\train.py
+      - ml\artifacts\selected_features.json
+      - ml\params.yaml
+    outs:
+      - ml\artifacts\model.joblib
+      - ml\artifacts\metadata.json
+      - ml\artifacts\explainer.joblib
+      - ml\artifacts\metrics_comparison.json
+      - ml\artifacts\roc_curve.png
+      - ml\artifacts\confusion_matrix.png
+      - ml\artifacts\feature_importance.png
+
+  evaluate:
+    cmd: ml\.venv\Scripts\python.exe ml\src\models\evaluate.py
+    deps:
+      - ml\src\models\evaluate.py
+      - ml\artifacts\metadata.json
+    outs:
+      - ml\artifacts\evaluation_report.txt

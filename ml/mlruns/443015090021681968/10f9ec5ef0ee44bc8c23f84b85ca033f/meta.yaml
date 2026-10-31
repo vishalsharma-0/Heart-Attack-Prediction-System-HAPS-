@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968/10f9ec5ef0ee44bc8c23f84b85ca033f/artifacts
+end_time: 1791844155204
+entry_point_name: ''
+experiment_id: '443015090021681968'
+lifecycle_stage: active
+run_id: 10f9ec5ef0ee44bc8c23f84b85ca033f
+run_name: LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791844154946
+status: 3
+tags: []
+user_id: visha

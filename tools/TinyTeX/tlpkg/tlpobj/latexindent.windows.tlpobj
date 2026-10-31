@@ -1,0 +1,8 @@
+name latexindent.windows
+category Package
+revision 79306
+shortdesc windows files of latexindent
+containersize 4314708
+containerchecksum 487451c82db581fadf6d58e163c0808355ef4c10819fe968bddec4c63f3ebabf8b2244558b7ebebb062ef3105d8fd6989803102dd514281d542454ce6e0bf5c2
+binfiles arch=windows size=2775
+ bin/windows/latexindent.exe

@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS patients_dataset (
+    id BIGSERIAL PRIMARY KEY,
+    patient_id INTEGER NOT NULL,
+    age INTEGER NOT NULL,
+    sex INTEGER NOT NULL,
+    cp INTEGER NOT NULL,
+    trestbps INTEGER NOT NULL,
+    chol INTEGER NOT NULL,
+    fbs INTEGER NOT NULL,
+    restecg INTEGER NOT NULL,
+    thalach INTEGER NOT NULL,
+    exang INTEGER NOT NULL,
+    oldpeak DOUBLE PRECISION NOT NULL,
+    slope INTEGER NOT NULL,
+    ca INTEGER NOT NULL,
+    thal INTEGER NOT NULL,
+    smoking INTEGER NOT NULL,
+    obesity INTEGER NOT NULL,
+    diabetes INTEGER NOT NULL,
+    hypertension INTEGER NOT NULL,
+    family_history INTEGER NOT NULL,
+    physical_activity INTEGER NOT NULL,
+    diet_quality INTEGER NOT NULL,
+    alcohol_use INTEGER NOT NULL,
+    air_pollution_exposure DOUBLE PRECISION NOT NULL,
+    chest_pain_severity INTEGER NOT NULL,
+    target INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_patients_dataset_target ON patients_dataset(target);

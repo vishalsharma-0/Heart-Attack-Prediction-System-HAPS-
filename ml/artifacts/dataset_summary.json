@@ -1,0 +1,48 @@
+{
+  "total_rows": 3000,
+  "total_columns": 26,
+  "columns": [
+    "id",
+    "patient_id",
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal",
+    "smoking",
+    "obesity",
+    "diabetes",
+    "hypertension",
+    "family_history",
+    "physical_activity",
+    "diet_quality",
+    "alcohol_use",
+    "air_pollution_exposure",
+    "chest_pain_severity",
+    "target"
+  ],
+  "class_balance": {
+    "negative_0": 1616,
+    "positive_1": 1384,
+    "negative_pct": 53.87,
+    "positive_pct": 46.13
+  },
+  "stats": {
+    "age_mean": 55.135,
+    "age_min": 30,
+    "age_max": 80,
+    "trestbps_mean": 135.182,
+    "chol_mean": 224.25066666666666,
+    "thalach_mean": 139.769,
+    "male_count": 1478,
+    "female_count": 1522
+  }
+}

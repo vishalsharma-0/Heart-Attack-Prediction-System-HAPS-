@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968/d86ea67f5f5e4985b65ac18a554c9da8/artifacts
+end_time: 1791844162460
+entry_point_name: ''
+experiment_id: '443015090021681968'
+lifecycle_stage: active
+run_id: d86ea67f5f5e4985b65ac18a554c9da8
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791844161311
+status: 3
+tags: []
+user_id: visha

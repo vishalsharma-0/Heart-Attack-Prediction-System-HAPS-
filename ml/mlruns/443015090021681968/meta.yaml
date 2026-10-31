@@ -1,0 +1,9 @@
+artifact_location: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968
+creation_time: 1791844154715
+effective_trace_archival_retention: null
+experiment_id: '443015090021681968'
+last_update_time: 1791844154715
+lifecycle_stage: active
+name: HAPS-Heart-Attack-Prediction
+trace_location: null
+workspace: default

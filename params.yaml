@@ -1,0 +1,49 @@
+base:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+
+data:
+  source_csv: "data/raw/heart_attack_india_3000.csv"
+  table_name: "patients_dataset"
+  db_url: "postgresql+psycopg2://postgres:postgres@localhost:5433/haps"
+
+features:
+  id_column: "patient_id"
+  target_column: "target"
+  baseline_features:
+    - age
+    - sex
+    - cp
+    - trestbps
+    - chol
+    - fbs
+    - restecg
+    - thalach
+    - exang
+    - oldpeak
+    - slope
+    - ca
+    - thal
+  candidate_extras:
+    - smoking
+    - obesity
+    - diabetes
+    - hypertension
+    - family_history
+    - physical_activity
+    - diet_quality
+    - alcohol_use
+    - air_pollution_exposure
+    - chest_pain_severity
+  max_extras: 2
+  min_roc_auc_delta: 0.01
+
+training:
+  models_to_evaluate:
+    - LogisticRegression
+    - RandomForest
+    - SVM
+    - XGBoost
+    - CatBoost
+  f_beta: 2.0

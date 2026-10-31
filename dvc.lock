@@ -1,0 +1,108 @@
+schema: '2.0'
+stages:
+  load_db:
+    cmd: ml\.venv\Scripts\python.exe ml\src\data\load_db.py
+    deps:
+    - path: data\raw\heart_attack_india_3000.csv
+      hash: md5
+      md5: f394a76557e8159e7649b176a0b317c8
+      size: 194764
+    - path: ml\params.yaml
+      hash: md5
+      md5: 4babe2ed1dd1342c25b35a0af7a6471f
+      size: 847
+    - path: ml\src\data\load_db.py
+      hash: md5
+      md5: b319fd9cfbb8d3a14fb420051e0d7417
+      size: 3406
+    outs:
+    - path: ml\artifacts\dataset_summary.json
+      hash: md5
+      md5: 4c51eca68874f3ffa5cc829e84755bd9
+      size: 880
+  analyze_features:
+    cmd: ml\.venv\Scripts\python.exe ml\src\features\analyze.py
+    deps:
+    - path: ml\artifacts\dataset_summary.json
+      hash: md5
+      md5: 4c51eca68874f3ffa5cc829e84755bd9
+      size: 880
+    - path: ml\params.yaml
+      hash: md5
+      md5: 4babe2ed1dd1342c25b35a0af7a6471f
+      size: 847
+    - path: ml\src\features\analyze.py
+      hash: md5
+      md5: 5661e070f0a528aa4a306018b940b7c5
+      size: 9709
+    params:
+      params.yaml:
+        base.cv_folds: 5
+        base.random_state: 42
+        base.test_size: 0.2
+        features.min_roc_auc_delta: 0.01
+    outs:
+    - path: ml\artifacts\selected_features.json
+      hash: md5
+      md5: 480943cd08c4412ae8aa1a90b686f4da
+      size: 10072
+  train:
+    cmd: ml\.venv\Scripts\python.exe ml\src\models\train.py
+    deps:
+    - path: ml\artifacts\selected_features.json
+      hash: md5
+      md5: 480943cd08c4412ae8aa1a90b686f4da
+      size: 10072
+    - path: ml\params.yaml
+      hash: md5
+      md5: 4babe2ed1dd1342c25b35a0af7a6471f
+      size: 847
+    - path: ml\src\models\train.py
+      hash: md5
+      md5: 56adced56d90b5d64256b7f2feb3cef3
+      size: 16484
+    outs:
+    - path: ml\artifacts\confusion_matrix.png
+      hash: md5
+      md5: 3d56d0d24fbf789b32ff1ce2f4df0626
+      size: 56789
+    - path: ml\artifacts\explainer.joblib
+      hash: md5
+      md5: 2f4c52d3d9757d12fba902f60c49d372
+      size: 576185
+    - path: ml\artifacts\feature_importance.png
+      hash: md5
+      md5: 0d2a0d09f27d5e43ea57cc09564617cd
+      size: 50386
+    - path: ml\artifacts\metadata.json
+      hash: md5
+      md5: 7fc7bc96bc7030d9f388efad3822d201
+      size: 7841
+    - path: ml\artifacts\metrics_comparison.json
+      hash: md5
+      md5: 43132c647383b78307c4abbb1aea7e5e
+      size: 1745
+    - path: ml\artifacts\model.joblib
+      hash: md5
+      md5: 22ef4869811ddad85a1fff03472b2691
+      size: 57428
+    - path: ml\artifacts\roc_curve.png
+      hash: md5
+      md5: 4d97f8809c592c268ed01aec4ef05a73
+      size: 135712
+  evaluate:
+    cmd: ml\.venv\Scripts\python.exe ml\src\models\evaluate.py
+    deps:
+    - path: ml\artifacts\metadata.json
+      hash: md5
+      md5: 7fc7bc96bc7030d9f388efad3822d201
+      size: 7841
+    - path: ml\src\models\evaluate.py
+      hash: md5
+      md5: 6d4714bf2ba9e47ad9459a3ab18f88a4
+      size: 2130
+    outs:
+    - path: ml\artifacts\evaluation_report.txt
+      hash: md5
+      md5: d58d424d50b097a80e5042d356be4893
+      size: 2312

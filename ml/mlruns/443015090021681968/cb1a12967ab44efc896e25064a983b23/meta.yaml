@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968/cb1a12967ab44efc896e25064a983b23/artifacts
+end_time: 1791844222178
+entry_point_name: ''
+experiment_id: '443015090021681968'
+lifecycle_stage: active
+run_id: cb1a12967ab44efc896e25064a983b23
+run_name: SVM
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791844217332
+status: 3
+tags: []
+user_id: visha

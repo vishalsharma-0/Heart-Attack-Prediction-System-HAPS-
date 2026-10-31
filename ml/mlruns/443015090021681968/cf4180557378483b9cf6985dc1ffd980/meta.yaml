@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/visha/Downloads/HAPS(final)/ml/mlruns/443015090021681968/cf4180557378483b9cf6985dc1ffd980/artifacts
+end_time: 1791844156787
+entry_point_name: ''
+experiment_id: '443015090021681968'
+lifecycle_stage: active
+run_id: cf4180557378483b9cf6985dc1ffd980
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791844155209
+status: 3
+tags: []
+user_id: visha
